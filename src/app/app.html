@@ -1,0 +1,29 @@
+<!-- Navigation Bar -->
+<nav class="nav-container">
+  <div class="nav-content">
+    <h1 class="nav-title">Task Tracker</h1>
+    <div class="nav-buttons">
+      <button mat-raised-button color="primary" routerLink="/" routerLinkActive="active">
+        <mat-icon>dashboard</mat-icon>
+        Dashboard
+      </button>
+      <button mat-raised-button color="accent" routerLink="/create-task" routerLinkActive="active">
+        <mat-icon>add_task</mat-icon>
+        Create Task
+      </button>
+      <button mat-raised-button color="primary" routerLink="/tasks" routerLinkActive="active">
+        <mat-icon>list</mat-icon>
+        Tasks
+      </button>
+      <button mat-raised-button color="warn" routerLink="/progress-reports" routerLinkActive="active">
+        <mat-icon>analytics</mat-icon>
+        Reports
+      </button>
+      </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
